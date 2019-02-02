@@ -1,13 +1,7 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 
-const Menu = () => {
-
-  const menuItems = [
-    {label: 'Home', path: '/'},
-    {label: 'Products', path: '/products/'},
-    {label: 'Contacts', path: '/contacts'}
-  ];
+const Menu = ({menuItems}) => {
 
   const menuElement = menuItems.map((item) => {
     return (
@@ -19,7 +13,7 @@ const Menu = () => {
     )
   });
   return (
-      <ul className="navbar-nav">
+      <ul className="navbar-nav justify-content-center">
         {menuElement}
       </ul>
   )
