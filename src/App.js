@@ -1,8 +1,12 @@
 import React from 'react';
+import Menu from "./components/Menu/Menu";
+import { BrowserRouter as Router} from "react-router-dom";
 
 const App = () => {
   return (
-    <h1>App</h1>
+    <Router>
+      <Menu/>
+    </Router>
   )
 };
 
