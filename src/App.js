@@ -1,11 +1,11 @@
 import React from 'react';
-import Menu from "./components/Menu/Menu";
 import { BrowserRouter as Router} from "react-router-dom";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <Router>
-      <Menu/>
+      <Header/>
     </Router>
   )
 };

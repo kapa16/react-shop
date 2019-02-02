@@ -12,7 +12,6 @@ const Menu = () => {
   const menuElement = menuItems.map((item) => {
     return (
       <MenuItem
-        class="navbar-nav mr-auto"
         key={item.label}
         label={item.label}
         path={item.path}
@@ -20,9 +19,9 @@ const Menu = () => {
     )
   });
   return (
-    <ul>
-      {menuElement}
-    </ul>
+      <ul className="navbar-nav">
+        {menuElement}
+      </ul>
   )
 };
 
