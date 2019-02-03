@@ -7,13 +7,12 @@ const Menu = ({menuItems}) => {
     return (
       <MenuItem
         key={item.label}
-        label={item.label}
-        path={item.path}
+        {...item}
       />
     )
   });
   return (
-      <ul className="navbar-nav justify-content-center">
+      <ul className="navbar-nav">
         {menuElement}
       </ul>
   )
