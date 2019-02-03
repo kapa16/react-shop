@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../pro-react-redux-master/star-db/190-switch-component/.idea/190-switch-component.iml" filepath="$PROJECT_DIR$/../pro-react-redux-master/star-db/190-switch-component/.idea/190-switch-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/react-shop.iml" filepath="$PROJECT_DIR$/.idea/react-shop.iml" />
     </modules>
   </component>
