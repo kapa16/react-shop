@@ -4,13 +4,20 @@ const initialState = {
 };
 
 function changeItem(state = initialState, action) {
+  let currentItem;
   switch (action.type) {
     case 'NEXT_ITEM':
-      return {currentItem: state.currentItem + 1};
+      currentItem = state.currentItem + 1;
+      break;
     case 'PREV_ITEM':
-      return {currentItem: state.currentItem + 1};
+      currentItem = state.currentItem - 1;
+      break;
     default:
       return state;
+
+  if (currentItem < 1) {
+
+  }
   }
 }
 
