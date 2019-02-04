@@ -1,12 +1,20 @@
 import React from 'react';
 import classes from './CarouselItem.module.sass';
+import PropTypes from 'prop-types';
 
-const CarouselItem = ({caruselData: {imgSrc, imgAlt}}) => {
+const CarouselItem = ({carouselData:{imgSrc, imgAlt}}) => {
   return (
-    <div>
-      <img className={classes.carousel__item} src={imgSrc} alt={imgAlt}/>
+    <div className={classes.carousel__item}>
+      <img className={classes["carousel__item-img"]} src={imgSrc} alt={imgAlt}/>
     </div>
   )
+};
+
+CarouselItem.propTypes = {
+  carouselData: PropTypes.shape({
+    imgSrc: PropTypes.string,
+    imgAlt: PropTypes.string
+  })
 };
 
 export default CarouselItem;
