@@ -1,13 +1,17 @@
 
 const initialState = {
-  hasError: false
+  currentItem: 1
 };
 
-function hasError(state = initialState, action) {
+function changeItem(state = initialState, action) {
   switch (action.type) {
-    case 'error':
-      return true;
+    case 'NEXT_ITEM':
+      return {currentItem: state.currentItem + 1};
+    case 'PREV_ITEM':
+      return {currentItem: state.currentItem + 1};
     default:
       return state;
   }
 }
+
+export default changeItem;

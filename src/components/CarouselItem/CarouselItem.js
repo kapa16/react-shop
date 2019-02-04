@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './CarouselItem.module.sass';
 
-const CarouselItem = () => {
+const CarouselItem = ({caruselData: {imgSrc, imgAlt}}) => {
   return (
     <div>
-      <img className={classes.carousel__item} src="http://lorempixel.com/1200/600/fashion" alt="product photo"/>
-    </div> 
+      <img className={classes.carousel__item} src={imgSrc} alt={imgAlt}/>
+    </div>
   )
 };
 
