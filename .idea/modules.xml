@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../pro-react-redux-master/star-db/190-switch-component/.idea/190-switch-component.iml" filepath="$PROJECT_DIR$/../pro-react-redux-master/star-db/190-switch-component/.idea/190-switch-component.iml" />
+      <module fileurl="file://J:/Cloud@Mail.Ru/Training GeekBrains/Документация/React/[Udemy] [Юрий Бура] React + Redux - Профессиональная Разработка/pro-react-redux-master/redux-sandbox/60-map-dispatch-to-props-as-object/.idea/60-map-dispatch-to-props-as-object.iml" filepath="J:/Cloud@Mail.Ru/Training GeekBrains/Документация/React/[Udemy] [Юрий Бура] React + Redux - Профессиональная Разработка/pro-react-redux-master/redux-sandbox/60-map-dispatch-to-props-as-object/.idea/60-map-dispatch-to-props-as-object.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/react-shop.iml" filepath="$PROJECT_DIR$/.idea/react-shop.iml" />
     </modules>
   </component>
