@@ -4,13 +4,13 @@ import classes from './Carousel.module.sass';
 import {connect} from 'react-redux';
 import * as actions from '../../redux/actions/actionCreators';
 import PropTypes from "prop-types";
+import CarouselIndicator from "../CarouselIndicator/CarouselIndicator";
 
 const carouselData = [
-  {imgSrc: '/img/prod1.jpg', imgAlt: 'product 1'},
-  {imgSrc: '/img/prod2.jpg', imgAlt: 'product 2'},
-  {imgSrc: '/img/prod3.jpg', imgAlt: 'product 3'},
-  {imgSrc: '/img/prod2.jpg', imgAlt: 'product 4'}
-
+  {id: 1, imgSrc: '/img/prod1.jpg', imgAlt: 'product 1'},
+  {id: 2, imgSrc: '/img/prod2.jpg', imgAlt: 'product 2'},
+  {id: 3, imgSrc: '/img/prod3.jpg', imgAlt: 'product 3'},
+  {id: 4, imgSrc: '/img/prod2.jpg', imgAlt: 'product 4'}
 ];
 
 const Carousel = ({currentItem, nextItem, prevItem, chooseItem}) => {
@@ -18,23 +18,17 @@ const Carousel = ({currentItem, nextItem, prevItem, chooseItem}) => {
   const maxItemNumber = carouselData.length;
   const carouselId = 'mainCarousel';
 
-  const indicatorsEl = carouselData.map((value, index) => {
-    return <li
-      key={index}
-      data-target={carouselId}
-      data-slide-to={index + 1}
-      onClick={() => chooseItem(index + 1)}
-      className={currentItem === index + 1 ? 'active' : ''}
-    />
-  });
 
   return (
     <section className={classes.carousel}>
       <div className='container carousel slide' id={carouselId}>
         <CarouselItem carouselData={carouselData[currentItem - 1]}/>
-        <ol className="carousel-indicators">
-          {indicatorsEl}
-        </ol>
+        <CarouselIndicator
+          carouselData={carouselData}
+          carouselId={carouselId}
+          currentItem={currentItem}
+          chooseItem={chooseItem}
+        />
         <a
           className='carousel-control-prev'
           href={`#${carouselId}`}
